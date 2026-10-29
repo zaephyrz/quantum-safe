@@ -245,9 +245,5 @@ quantum-safe/
 AI Tool: DeepSeek
 
 How I used it:
-I used DeepSeek to understand the Bell state construction, to debug my Qiskit
-environment in Distrobox, and to review my explanation of why CNOT creates
-measurement correlation. All code was executed and verified locally with
-Qiskit AerSimulator; the counts shown above are from my own runs, not
-AI-generated data.
+I used DeepSeek to understand the Bell state construction and to review my explanation of why CNOT creates measurement correlation. All code was executed and verified locally with Qiskit AerSimulator; the counts shown above are from my own runs, not AI-generated data.
 ```
