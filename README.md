@@ -120,8 +120,8 @@ measurement histograms [3].
 | Line | What it does | Why it matters |
 |------|-------------|----------------|
 | `QuantumCircuit(2)` | Creates two qubits | The safe has two output bits |
-| `qc.h(0)` | Hadamard on qubit 0 | Puts qubit 0 into `(|0⟩+|1⟩)/√2` |
-| `qc.cx(0, 1)` | CNOT, control = 0, target = 1 | Entangles the pair into `(|00⟩+|11⟩)/√2` |
+| `qc.h(0)` | Hadamard on qubit 0 | Puts qubit 0 into `(\|0⟩+\|1⟩)/√2` |
+| `qc.cx(0, 1)` | CNOT, control = 0, target = 1 | Entangles the pair into `(\|00⟩+\|11⟩)/√2` |
 | `qc.measure_all()` | Measures both qubits | Collapses the state into classical `counts` |
 | `AerSimulator()` | Local ideal simulator | No real hardware queue; ideal for experimentation |
 | `transpile(qc, sim)` | Converts circuit to simulator basis | Standard Qiskit Aer workflow |
@@ -165,11 +165,13 @@ correlation comes from the CNOT gate and not from the H gate alone.
 
 ## Screenshot
 
-![Quantum Safe dark-purple interface](quantum-safe.png)
+![Quantum Safe Jupyter Output](quantum-safe.png)
 
-The static page (`index.html`, root directory) renders the core measurement histogram
-and the full experiments table on a dark purple theme. Chart.js is loaded from CDN;
-no build step or server is required.
+The image above shows the execution of `quantum-safe.ipynb`. It displays the raw
+text output for the core circuit, shot-count comparisons, the five independent runs,
+the removed-CNOT circuit, and the swapped-H circuit. Below the text output, a
+three-panel histogram visualizes the stark difference in measurement distributions
+between the three circuit configurations.
 
 ---
 
