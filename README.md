@@ -163,15 +163,19 @@ correlation comes from the CNOT gate and not from the H gate alone.
 
 ---
 
-## Screenshot
+## Visualizations
 
+### Jupyter Notebook Output
 ![Quantum Safe Jupyter Output](quantum-safe.png)
 
-The image above shows the execution of `quantum-safe.ipynb`. It displays the raw
-text output for the core circuit, shot-count comparisons, the five independent runs,
-the removed-CNOT circuit, and the swapped-H circuit. Below the text output, a
-three-panel histogram visualizes the stark difference in measurement distributions
-between the three circuit configurations.
+The image above shows the execution of `quantum-safe.ipynb`. It displays the raw text output for the core circuit, shot-count comparisons, the five independent runs, the removed-CNOT circuit, and the swapped-H circuit. Below the text output, a three-panel histogram visualizes the stark difference in measurement distributions between the three circuit configurations.
+
+### Web Interface
+![Quantum Safe Web Interface](quantum-safe-web.png)
+
+You can view the interactive version of this data live on GitHub Pages: **[Quantum Safe Web Demo](https://zaephyrz.github.io/quantum-safe/)**
+
+The web interface provides a beautifully themed, interactive view of the core measurement histogram and a detailed breakdown of the experimental results, making the quantum correlations easy to explore.
 
 ---
 
